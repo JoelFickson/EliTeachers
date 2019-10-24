@@ -1,7 +1,7 @@
 <?php
 require_once "../../vendor/autoload.php";
 require_once "../../Core/Util/Constants.php";
-
+require_once "../../Core/Partials/SessionManager.php";
 ?>
 
 <!doctype html>
@@ -30,6 +30,7 @@ require_once "../../Core/Partials/MainNav.php"; ?>
     <br><br>
 
     <h2 class="text-center text-primary">View Class Information</h2>
+
     <?php
     if (!empty($_GET['id'])) {
         $ID = htmlentities($_GET['id'], ENT_QUOTES, "UTF-8");
@@ -38,7 +39,7 @@ require_once "../../Core/Partials/MainNav.php"; ?>
     }
 
     ?>
-
+    <a href="#" id="backLink">Back</a>
     <hr>
     <div class="row" id="UI">
 
@@ -60,8 +61,10 @@ require_once "../../Core/Partials/MainFooter.php";
 <script src="<?php echo URL_ROOT ?>/Core/Handlers/Classes.js"></script>
 <script>
     $(() => {
-        const UI = $("#UI");
-        // LoadClassInfo(UI);
+        $('#backLink').click(function(){
+            parent.history.back();
+            return false;
+        });
 
     });
 </script>

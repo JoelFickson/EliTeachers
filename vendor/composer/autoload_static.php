@@ -9,11 +9,16 @@ class ComposerStaticInit9f15b96683b702be55a27350655a9da0
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
+            'PHPMailer\\PHPMailer\\' => 20,
             'PHLAK\\StrGen\\' => 13,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
         'PHLAK\\StrGen\\' => 
         array (
             0 => __DIR__ . '/..' . '/phlak/strgen/src',
@@ -42,6 +47,9 @@ class ComposerStaticInit9f15b96683b702be55a27350655a9da0
         'Bulletproof\\Image' => __DIR__ . '/..' . '/samayo/bulletproof/src/bulletproof.php',
         'Classes' => __DIR__ . '/../..' . '/Core/Adapters/Classes.php',
         'DSN' => __DIR__ . '/../..' . '/Core/Database/DSN.php',
+        'Greetings' => __DIR__ . '/../..' . '/Core/Adapters/Greetings.php',
+        'Session' => __DIR__ . '/../..' . '/Core/Adapters/Session.php',
+        'SessionRouter' => __DIR__ . '/../..' . '/Core/Adapters/SessionRouter.php',
         'Students' => __DIR__ . '/../..' . '/Core/Adapters/Students.php',
         'Teacher' => __DIR__ . '/../..' . '/Core/Adapters/Teacher.php',
     );

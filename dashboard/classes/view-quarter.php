@@ -1,7 +1,7 @@
 <?php
 require_once "../../vendor/autoload.php";
 require_once "../../Core/Util/Constants.php";
-
+require_once "../../Core/Partials/SessionManager.php";
 ?>
 
 <!doctype html>
@@ -30,7 +30,7 @@ require_once "../../Core/Partials/MainNav.php"; ?>
     <br><br>
 
     <h3 class="text-center text-primary">View Quarter Information</h3>
-
+    <a href="#" id="backLink">Back</a>
 
     <hr>
     <div class="row" id="">
@@ -70,6 +70,10 @@ require_once "../../Core/Partials/MainFooter.php";
 
         LoadQuarterInfo(UI);
         LoadQuarterStudents(StudentsUI);
+        $('#backLink').click(function(){
+            parent.history.back();
+            return false;
+        });
 
     });
 </script>

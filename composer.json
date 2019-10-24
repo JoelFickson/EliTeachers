@@ -12,7 +12,8 @@
   "require": {
     "samayo/bulletproof": "4.0.*",
     "ircmaxell/random-lib": "^1.2",
-    "phlak/strgen": "^3.0"
+    "phlak/strgen": "^3.0",
+    "phpmailer/phpmailer": "^6.1"
   },
   "autoload": {
     "classmap": [

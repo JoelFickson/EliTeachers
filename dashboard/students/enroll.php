@@ -1,7 +1,7 @@
 <?php
 require_once "../../vendor/autoload.php";
 require_once "../../Core/Util/Constants.php";
-
+require_once "../../Core/Partials/SessionManager.php";
 ?>
 
 <!doctype html>
@@ -21,7 +21,7 @@ require_once "../../Core/Partials/MainNav.php"; ?>
 <div class="container">
     <br>
     <h4>All My Students </h4>
-    <p><a href="enroll.php">Enroll Students</a></p>
+    <p><a href="#" id="backLink">Back</a></p>
 
     <hr>
     <div class="row">
@@ -111,6 +111,10 @@ require_once "../../Core/Partials/MainFooter.php";
 
         });
 
+        $('#backLink').click(function(){
+            parent.history.back();
+            return false;
+        });
 
     });
 </script>

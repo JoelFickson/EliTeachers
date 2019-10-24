@@ -1,6 +1,7 @@
 <?php
 
 require_once "vendor/autoload.php";
+require_once "Core/Util/Constants.php";
 
 ?>
 
@@ -17,6 +18,7 @@ require_once "vendor/autoload.php";
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>ELI Teachers Portal | Login</title>
+    <link href="<?php echo URL_ROOT ?>/public/assets/logo.png" rel="icon" type="image/png"/>
     <style>
         body, html {
             height: 100%;
@@ -27,6 +29,7 @@ require_once "vendor/autoload.php";
 
             background-image: linear-gradient(to left bottom, #4f5dd1, #7676d7, #9690dd, #b2ace3, #cdc8e8, #d6cbe0, #d9cfda, #d8d5d7, #c8c2c4, #b9b0b0, #a99e9b, #978d86) !important;
         }
+
     </style>
 </head>
 <body id="LoginBody">
@@ -49,7 +52,8 @@ require_once "vendor/autoload.php";
                 ?>
                 <form action="" method="post">
                     <div class="form-group">
-                        <input name="email_add" required class="form-control form-control-lg" placeholder="Email Address"
+                        <input name="email_add" required class="form-control form-control-lg"
+                               placeholder="Email Address"
                                type="text">
                     </div>
                     <div class="form-group">
@@ -61,20 +65,26 @@ require_once "vendor/autoload.php";
                     </div>
                 </form>
             </div>
+            <div class="col-md-12">
+                <br>
+                <p class="text-center">
+                    <?
+                    echo date("Y") . " English Language Institute, San Francisco";
+
+                    ?> |  All Rights Reserved. <br>
+                    Developed by <a href="https://www.linkedin.com/in/jfngozo" target="_blank">Joel Fickson
+                        Ngozo</a>
+                </p>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+
+<?php
+require_once "Core/Partials/TeachersFooterInclude.php";
+
+?>
+
 </body>
 </html>

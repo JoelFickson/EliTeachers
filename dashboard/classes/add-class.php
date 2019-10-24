@@ -1,7 +1,7 @@
 <?php
 require_once "../../vendor/autoload.php";
 require_once "../../Core/Util/Constants.php";
-
+require_once "../../Core/Partials/SessionManager.php";
 ?>
 
 <!doctype html>

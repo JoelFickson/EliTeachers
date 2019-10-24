@@ -312,8 +312,8 @@ VALUES ('$UID','$ID','$Level$year','$year','$Level')";
                 $QName = $item['q_name'];
                 $ID = $item['q_uid'];
                 echo "
-    <div class='col-sm-6 card'>
-        <div class='card-body'>
+    <div class='col-sm-6 '>
+        <div class='col-md-12 ___CardUI'>
             <h6 class='text-center'> $QName</h6>
             <p class='text-center'><a href='view-quarter.php?id=$ID' class='btn btn-primary'>View Info</a></p>
         </div>

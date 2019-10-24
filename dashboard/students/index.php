@@ -1,13 +1,13 @@
 <?php
 require_once "../../vendor/autoload.php";
 require_once "../../Core/Util/Constants.php";
-
+require_once "../../Core/Partials/SessionManager.php";
 ?>
 
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

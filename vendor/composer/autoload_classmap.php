@@ -10,6 +10,9 @@ return array(
     'Bulletproof\\Image' => $vendorDir . '/samayo/bulletproof/src/bulletproof.php',
     'Classes' => $baseDir . '/Core/Adapters/Classes.php',
     'DSN' => $baseDir . '/Core/Database/DSN.php',
+    'Greetings' => $baseDir . '/Core/Adapters/Greetings.php',
+    'Session' => $baseDir . '/Core/Adapters/Session.php',
+    'SessionRouter' => $baseDir . '/Core/Adapters/SessionRouter.php',
     'Students' => $baseDir . '/Core/Adapters/Students.php',
     'Teacher' => $baseDir . '/Core/Adapters/Teacher.php',
 );
