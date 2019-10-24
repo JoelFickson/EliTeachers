@@ -21,7 +21,7 @@ require_once "../../Core/Partials/MainNav.php"; ?>
 <div class="container">
     <br>
     <h4>All My Students </h4>
-    <p><a href="enroll.php">Enroll  Students</a></p>
+    <p><a href="enroll.php">Enroll Students</a></p>
 
     <hr>
     <div class="container">

@@ -71,7 +71,7 @@ require_once "Core/Util/Constants.php";
                     <?
                     echo date("Y") . " English Language Institute, San Francisco";
 
-                    ?> |  All Rights Reserved. <br>
+                    ?> | All Rights Reserved. <br>
                     Developed by <a href="https://www.linkedin.com/in/jfngozo" target="_blank">Joel Fickson
                         Ngozo</a>
                 </p>

@@ -106,12 +106,12 @@ require_once "../../Core/Partials/MainFooter.php";
             evt.preventDefault();
 
 
-            EnrollStudent(UI,ID, ClassID);
+            EnrollStudent(UI, ID, ClassID);
 
 
         });
 
-        $('#backLink').click(function(){
+        $('#backLink').click(function () {
             parent.history.back();
             return false;
         });

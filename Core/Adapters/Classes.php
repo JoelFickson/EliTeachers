@@ -415,7 +415,6 @@ VALUES ('$UID','$ID','$Level$year','$year','$Level')";
             ?>
 
 
-
             <?php
 
             foreach ($ResultSet as $feed) {
@@ -442,11 +441,7 @@ VALUES ('$UID','$ID','$Level$year','$year','$Level')";
                       </div></div>";
 
 
-
                 $URL = URL_ROOT;
-
-
-
 
 
             }

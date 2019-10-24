@@ -36,8 +36,8 @@ require_once "../../Core/Partials/MainNav.php"; ?>
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="inputGroupSelect01">Level</label>
                     </div>
-                    <select class="custom-select"  required name="level" id="inputGroupSelect01">
-                        <option selected  disabled>Choose Level</option>
+                    <select class="custom-select" required name="level" id="inputGroupSelect01">
+                        <option selected disabled>Choose Level</option>
                         <option value="L44D">4</option>
                         <option value="L54D">5</option>
                         <option value="L64D">6</option>

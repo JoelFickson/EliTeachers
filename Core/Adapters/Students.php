@@ -121,7 +121,6 @@ class Students
                 $class_id = $row['class_id'];
 
 
-
                 echo "<p><a href='?id=$StudentID&cls=$class_id' class='StudentLink'>$StudentID</a></p>";
 
 

@@ -61,7 +61,7 @@ require_once "../../Core/Partials/MainFooter.php";
 <script src="<?php echo URL_ROOT ?>/Core/Handlers/Classes.js"></script>
 <script>
     $(() => {
-        $('#backLink').click(function(){
+        $('#backLink').click(function () {
             parent.history.back();
             return false;
         });

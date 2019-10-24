@@ -14,7 +14,6 @@ if (!Session::exists("eliTeacherID")) {
     session_destroy();
 
 
-
     Session::delete("eliTeacherEmail");
     Session::delete("eliTeacherFName");
     Session::delete("eliTeacherLName");

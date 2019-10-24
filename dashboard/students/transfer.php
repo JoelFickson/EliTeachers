@@ -20,7 +20,7 @@ require_once "../../Core/Partials/MainNav.php"; ?>
 
 <div class="container">
     <br>
-    <h4>Transfer  </h4>
+    <h4>Transfer </h4>
     <a href="#" id="backLink">Back</a>
     <hr>
     <div class="container">
@@ -44,7 +44,7 @@ require_once "../../Core/Partials/MainFooter.php";
 <script>
     $(() => {
 
-        $('#backLink').click(function(){
+        $('#backLink').click(function () {
             parent.history.back();
             return false;
         });

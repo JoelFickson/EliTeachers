@@ -70,7 +70,7 @@ require_once "../../Core/Partials/MainFooter.php";
 
         LoadQuarterInfo(UI);
         LoadQuarterStudents(StudentsUI);
-        $('#backLink').click(function(){
+        $('#backLink').click(function () {
             parent.history.back();
             return false;
         });
