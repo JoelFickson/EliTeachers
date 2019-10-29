@@ -431,7 +431,7 @@ VALUES ('$UID','$ID','$Level$year','$year','$Level')";
                            <p class='text-center'> $Started - $finish
                            <br>
                            
-                           <a href='add'>Add</a> | <a href='view'>View</a></p>
+                           <a href='add.php'>Add</a> | <a href='view.php'>View</a></p>
                             
                           
 

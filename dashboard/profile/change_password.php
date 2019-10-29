@@ -32,13 +32,13 @@ require_once "../../Core/Partials/MainNav.php"; ?>
                 <p>You will be logged out automatically when you change your password.</p>
 
                 <?php
-                if (isset($_POST['change_password'])){
-                    $PassOne = htmlentities($_POST['pass'], ENT_QUOTES,"UTF-8");
-                    $PassTwo = htmlentities($_POST['password'], ENT_QUOTES,"UTF-8");
+                if (isset($_POST['change_password'])) {
+                    $PassOne = htmlentities($_POST['pass'], ENT_QUOTES, "UTF-8");
+                    $PassTwo = htmlentities($_POST['password'], ENT_QUOTES, "UTF-8");
 
-                    if ($PassOne!=$PassTwo){
+                    if ($PassOne != $PassTwo) {
                         echo "<p class='text-danger'>Passwords do not match!</p>";
-                    }else{
+                    } else {
                         Teacher::ChangePassword($PassTwo);
                     }
                 }

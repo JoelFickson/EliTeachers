@@ -51,7 +51,7 @@ class Teacher
         }
 
         echo "<div class='row'>
-            <div class='col-md-6'><br><p class='text-center'><a href='change_picture' class='btn btn-primary'>Change Picture</a></p>
+            <div class='col-md-6'><br><p class='text-center'><a href='change_picture.php' class='btn btn-primary'>Change Picture</a></p>
 
             </div> <div class='col-md-6'><br><p class='text-center'><a href='change_password.php' class='btn btn-danger'>Change Password</a></p>
 

@@ -20,7 +20,7 @@ require_once "../../Core/Partials/MainNav.php"; ?>
 
 <div class="container">
     <br>
-    <h4>Notifications Management  </h4>
+    <h4>Notifications Management </h4>
 
     <hr>
     <div class="container">

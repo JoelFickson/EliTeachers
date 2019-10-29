@@ -24,40 +24,36 @@ require_once "../../Core/Partials/MainNav.php"; ?>
     <p>Select class and quarter to add attendance</p>
     <hr>
     <div class="container">
-        <div class="col-sm-10 mx-auto">
-            <div class="row">
+        <div class="col-sm-12">
+            <?php
 
-                <?php
+            $ID = $_SESSION['eliTeacherID'];
 
-                $ID = $_SESSION['eliTeacherID'];
+            $PST = "SELECT * FROM classes WHERE teacher_id='$ID'";
+            $RST = DSN::getInstance()->CRUD($PST);
+            if ($RST->rowCount() > 0) {
+                echo "<div class='row'>";
+                echo "<hr/>";
+                foreach ($RST as $row) {
+                    $Name = $row['class_name'];
+                    $ID = $row['class_id'];
 
-                $PST = "SELECT * FROM classes WHERE teacher_id='$ID'";
-                $RST = DSN::getInstance()->CRUD($PST);
-                if ($RST->rowCount() > 0) {
-                    echo "<div class='row'>";
-                    echo "<hr/>";
-                    foreach ($RST as $row) {
-                        $Name = $row['class_name'];
-                        $ID = $row['class_id'];
-
-                        echo "<div class='col-sm-4'><div class='col-sm-12 __JoelUICard'  id=''>
+                    echo "<div class='col-sm-4'><div class='col-sm-12 __JoelUICard'  id=''>
                             <h4 class='text-center'><a href='view-class.php?id=$ID'>$Name</a></h4>
                                <p>Click the class name to see quarters and details.</p>
 
                             </div></div>";
 
-                    }
-                    echo
-                    "</div>";
-                } else {
-
-                    echo "<p class='text-center'>You do not have any classes(Quarters).</p>";
                 }
+                echo
+                "</div>";
+            } else {
+
+                echo "<p class='text-center'>You do not have any classes(Quarters).</p>";
+            }
 
 
-                ?>
-
-
+            ?>
             </div>
         </div>
     </div>

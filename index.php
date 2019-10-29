@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 require_once "vendor/autoload.php";
 require_once "Core/Util/Constants.php";
 
@@ -8,17 +8,15 @@ require_once "Core/Util/Constants.php";
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <link rel="stylesheet" type="text/css" href="Core/UX/et.css"/>
+
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <title>ELI Teachers Portal | Login</title>
-    <link href="<?php echo URL_ROOT ?>/public/assets/logo.png" rel="icon" type="image/png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="Core/UX/et.css"/>
+    <link href="<?php echo URL_ROOT ?>public/assets/logo.png" rel="icon" type="image/png"/>
+
     <style>
         body, html {
             height: 100%;
@@ -28,6 +26,37 @@ require_once "Core/Util/Constants.php";
         #LoginBody {
 
             background-image: linear-gradient(to left bottom, #4f5dd1, #7676d7, #9690dd, #b2ace3, #cdc8e8, #d6cbe0, #d9cfda, #d8d5d7, #c8c2c4, #b9b0b0, #a99e9b, #978d86) !important;
+        }
+        .__JoelUICard {
+            background: #EFEFEF !important;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .logo {
+            height: 200px !important;
+        }
+
+        .nav-logo {
+            height: 50px !important;
+        }
+
+        #Footer {
+            padding: 25px !important;
+            background: #978d86;
+            margin-bottom: 0 !important;
+        }
+
+        #Footer p {
+            color: #FFF !important;
+            padding: 10px;
+        }
+
+        .orange {
+
+            color: #FFF;
+            font-weight: bold;
+
         }
 
     </style>

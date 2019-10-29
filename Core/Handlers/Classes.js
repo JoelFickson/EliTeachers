@@ -105,7 +105,6 @@ function LoadClassInfo(UI) {
 }
 
 
-
 function LoadQuarters(UI) {
     const Data = $(location).attr("href");
     let ID = getURLParameters(Data, 'id');

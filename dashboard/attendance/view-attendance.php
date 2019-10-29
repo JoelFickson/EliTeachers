@@ -100,7 +100,7 @@ require_once "../../Core/Partials/MainFooter.php";
 
         });
 
-        $('#backLink').click(function(){
+        $('#backLink').click(function () {
             parent.history.back();
             return false;
         });

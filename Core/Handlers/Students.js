@@ -63,7 +63,7 @@ function AddAttendance(ID, StudentID) {
 }
 
 //Enrolling a student into a specific quarter
-function EnrollStudent(UI,ID, ClassID) {
+function EnrollStudent(UI, ID, ClassID) {
 
     const FormAddAttendance = $("#EnrollmentForm")
     $.post(`../../Core/Bridges/StudentRouter.php?action=Enroll&id=${ID}&cls=${ClassID}`, FormAddAttendance.serialize(), (data, status) => {
@@ -95,7 +95,6 @@ function LoadAllClassQuarters(ClassID) {
     const UI = $("#MyUI");
     UI.empty().append("Hello");
     $.get(`../../Core/Bridges/ClassesRouter.php?action=loadQuarters&id=${ClassID}`, (data, status) => {
-
 
 
         if (status === "success") {

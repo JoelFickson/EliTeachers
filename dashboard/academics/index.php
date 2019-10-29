@@ -21,8 +21,8 @@ require_once "../../Core/Partials/MainNav.php"; ?>
 <div class="container">
     <br>
     <h4>Academics Management </h4>
-    <p>Below are all quarters of which you will  add your academics on.</p>
-    <a href="new-class.php">Add </a>
+    <p>Below are all quarters of which you will add your academics on.</p>
+
     <hr>
     <div class="row">
         <?php

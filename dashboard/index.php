@@ -40,7 +40,7 @@ require_once "../Core/Partials/MainNav.php"; ?>
                 <hr>
                 <p class="text-center">Add, view, edit and manage classes.</p>
                 <p class="text-center">
-                    <a href="" class="btn btn-primary">Go</a>
+                    <a href="<?php echo DASHBOARD?>classes" class="btn btn-primary">Go</a>
                 </p>
             </div>
         </div>
@@ -50,7 +50,7 @@ require_once "../Core/Partials/MainNav.php"; ?>
                 <hr>
                 <p class="text-center">Add and view performance metrics.</p>
                 <p class="text-center">
-                    <a href="" class="btn btn-primary">Add Now</a>
+                    <a href="<?php echo DASHBOARD?>academics" class="btn btn-primary">Add Now</a>
                 </p>
             </div>
         </div>
@@ -60,7 +60,7 @@ require_once "../Core/Partials/MainNav.php"; ?>
                 <hr>
                 <p class="text-center">Get to know your students in your classes.</p>
                 <p class="text-center">
-                    <a href="" class="btn btn-primary">Go</a>
+                    <a href="<?php echo DASHBOARD?>students" class="btn btn-primary">Go</a>
                 </p>
             </div>
         </div>
@@ -70,7 +70,7 @@ require_once "../Core/Partials/MainNav.php"; ?>
                 <hr>
                 <p class="text-center">Manage attendances for your students.</p>
                 <p class="text-center">
-                    <a href="" class="btn btn-primary">Go</a>
+                    <a href="<?php echo DASHBOARD?>attendance" class="btn btn-primary">Go</a>
                 </p>
             </div>
         </div>
@@ -80,7 +80,7 @@ require_once "../Core/Partials/MainNav.php"; ?>
                 <hr>
                 <p class="text-center">Send direct notifications to your students/classes</p>
                 <p class="text-center">
-                    <a href="" class="btn btn-primary">Go</a>
+                    <a href="<?php echo DASHBOARD?>notification" class="btn btn-primary">Go</a>
                 </p>
             </div>
         </div>
@@ -90,7 +90,7 @@ require_once "../Core/Partials/MainNav.php"; ?>
                 <hr>
                 <p class="text-center">Edit your profile password and picture.</p>
                 <p class="text-center">
-                    <a href="" class="btn btn-primary">Go</a>
+                    <a href="<?php echo DASHBOARD?>profile" class="btn btn-primary">Go</a>
                 </p>
             </div>
         </div>
